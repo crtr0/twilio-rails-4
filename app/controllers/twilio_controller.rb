@@ -5,12 +5,9 @@ class TwilioController < ApplicationController
 
   after_filter :set_header
 
-  def sms
+  def voice
   	response = Twilio::TwiML::Response.new do |r|
-  	  r.Say 'hello there', :voice => 'alice'
-  	  r.Dial :callerId => '+14159992222' do |d|
-  	    d.Client 'jenny'
-  	  end
+  	  r.Say 'Hey there. Congrats on integrating Twilio into your Rails 4 app.', :voice => 'alice'
   	end
 
   	render_twiml response
