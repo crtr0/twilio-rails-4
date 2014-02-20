@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-RailsDemo::Application.load_tasks
+TwilioRails4::Application.load_tasks
