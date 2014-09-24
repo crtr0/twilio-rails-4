@@ -1,12 +1,10 @@
-# Integrating Twilio With Your Rails 4 App
+# Integrating Twilio With Your Rails 4 App - Part 2
 
-This repo contains the code that accompanies the blog post [Integrating Twilio With Your Rails 4 App][1]. In that blog post I cover:
+This repo contains the code that accompanies the blog post [Integrating Twilio With Your Rails 4 App - Part 2][1]. In that blog post I cover:
 
-1. Signing up for Twilio
-2. Acquiring a free phone number
-3. Setting up a Rails 4 app
-4. Connecting Twilio to the app
-5. Processing an inbound phone call
+1. Securing Your Webhooks
+2. Send SMS and MMS using the Twilio REST API
+3. Getting Notified About Message Delivery
 
 ## Meta 
 
@@ -14,5 +12,5 @@ This repo contains the code that accompanies the blog post [Integrating Twilio W
 * [MIT License](http://www.opensource.org/licenses/mit-license.html)
 * Brought to you by [Twilio](http://www.twilio.com) Seattle
 
-[1]:http://twilio.com/blog/2014/02/twilio-on-rails-integrating-twilio-with-your-rails-4-app.html
+[1]:http://twilio.com/blog/fix
 
