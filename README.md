@@ -1,11 +1,11 @@
 # Integrating Twilio With Your Rails 4 App - Part 3
 
-This repo contains the code that accompanies the blog post [Twilio On Rails Part 3 - ][1]. In that blog post I cover:
+This repo contains the code that accompanies the blog post [Twilio On Rails Part 3 - ][1]. In that blog post I cover how you:
 
-1. Creating a TwiML app
-2. Generating a Capability Token
-3. Integrating the Twilio JS SDK
-4. Tweaking the WebRTC settings
+1. Create a TwiML app
+2. Integrate the Twilio Client JS SDK
+3. Generate a Capability Token
+4. Connect the VOIP call
 
 ## Meta 
 
