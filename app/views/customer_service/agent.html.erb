@@ -1,0 +1,21 @@
+<h1>Agent Dashboard</h1>
+<p>Status: Customer has requested a callback.</p>
+<table>
+  <tr><th>Name</th><td><%= @customer.first_name %> <%= @customer.last_name %></td></tr>
+  <tr><th>Location</th><td><%= @customer.city %>, <%= @customer.state %></td></tr>
+</table>
+<button onclick="call()">Make Call</button>
+
+<script type="text/javascript"
+src="//static.twilio.com/libs/twiliojs/1.2/twilio.min.js"></script>
+<script>
+// works on IE9 and above
+document.addEventListener("DOMContentLoaded", function(event) { 
+  Twilio.Device.setup("<%= @token %>");
+});
+
+function call() {
+  console.log("foo");
+  Twilio.Device.connect({id: 123});
+}
+</script>

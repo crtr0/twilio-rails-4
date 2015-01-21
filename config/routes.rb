@@ -12,7 +12,11 @@ TwilioRails4::Application.routes.draw do
 
   post 'twilio/status' => 'twilio#status'
 
+  post 'twilio/connect_customer' => 'twilio#connect_customer'
+
   post 'notifications/notify' => 'notifications#notify'
+
+  get 'customer_service/agent' => 'customer_service#agent'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

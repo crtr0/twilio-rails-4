@@ -1,10 +1,11 @@
-# Integrating Twilio With Your Rails 4 App - Part 2
+# Integrating Twilio With Your Rails 4 App - Part 3
 
-This repo contains the code that accompanies the blog post [Integrating Twilio With Your Rails 4 App - Part 2][1]. In that blog post I cover:
+This repo contains the code that accompanies the blog post [Twilio On Rails Part 3 - ][1]. In that blog post I cover:
 
-1. Securing Your Webhooks
-2. Send SMS and MMS using the Twilio REST API
-3. Getting Notified About Message Delivery
+1. Creating a TwiML app
+2. Generating a Capability Token
+3. Integrating the Twilio JS SDK
+4. Tweaking the WebRTC settings
 
 ## Meta 
 

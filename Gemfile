@@ -27,7 +27,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'twilio-ruby', '~> 3.12.0'
+gem 'twilio-ruby', '~> 3.14.4'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

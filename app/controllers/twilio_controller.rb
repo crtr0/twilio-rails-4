@@ -1,5 +1,3 @@
-require 'twilio-ruby'
-
 class TwilioController < ApplicationController
   include Webhookable
 
@@ -18,6 +16,24 @@ class TwilioController < ApplicationController
 
   def status 
     render_twiml Twilio::TwiML::Response.new
+  end
+
+  def connect_customer
+    # mocking a db of customers, connect to real db in production
+    customers = {
+      '123' => {'phone_number' => '+15551111111'},
+      '456' => {'phone_number' => '+15551234567'}
+    }
+    # accessing mocked customers db
+    customer = customers[params[:id]]
+    response = Twilio::TwiML::Response.new do |r|
+      r.Say 'Hello. Connecting you the customer now.', :voice => 'alice'
+      r.Dial :callerId => Rails.application.secrets.twilio_phone_number do |d|
+        d.Number customer['phone_number']
+      end
+    end
+
+    render_twiml response
   end
   
 end
